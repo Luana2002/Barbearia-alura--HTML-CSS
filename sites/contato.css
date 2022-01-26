@@ -1,3 +1,6 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
 header {
     background: #dddddd;
 }
@@ -47,6 +50,7 @@ footer {
 main {
     width: 940px;
     margin: 0 auto;
+    
 }
 
 form{
@@ -57,6 +61,7 @@ form label, form legend {
     display: block;
     font-size: 20PX;
     margin: 0 0 10px;
+    border-radius:10px ;
 }
 
 .input-padrao{
@@ -106,3 +111,39 @@ td, th {
     padding: 8px 15px;
 }
 
+fieldset select{
+    text-align: center;
+    width: 20%;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    transition: 1s all;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa,
+    main{
+        width: auto;
+        text-align: center;
+    }
+
+    form{
+        text-align: center;
+        width: 90%;
+    }
+
+    .enviar, .input-padrao{
+        width: 90%;
+        text-align: center;
+        margin: 10px;
+    }
+    nav {
+		position: static;
+		text-align: center;
+	}
+    table{
+        width: 100%;
+    }
+}    
